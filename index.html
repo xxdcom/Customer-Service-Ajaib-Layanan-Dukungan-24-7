@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Pusat Bantuan Ajaib - Customer Service & Dukungan Pelanggan 24/7</title>
+    <meta name="description" content="Hubungi Customer Service Ajaib melalui WhatsApp resmi 0821-7222-6661. Layanan dukungan pelanggan Ajaib Sekuritas untuk investasi, crypto, dan layanan keuangan lainnya. Bantuan 24/7 via chat, email: support@ajaib.co.id" />
+    <meta name="keywords" content="customer service ajaib, cs ajaib, nomor wa ajaib, kontak ajaib sekuritas, ajaib crypto cs, layanan pelanggan ajaib, whatsapp ajaib, bantuan ajaib, pusat bantuan ajaib, ajaib support" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Customer Service Ajaib - Layanan Dukungan 24/7" />
+    <meta property="og:description" content="Hubungi CS Ajaib via WhatsApp 0821-7222-6661 atau email support@ajaib.co.id. Layanan pelanggan Ajaib Sekuritas untuk investasi dan crypto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ajaib.co.id/help" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Customer Service Ajaib - Bantuan 24/7" />
+    <meta name="twitter:description" content="Hubungi CS Ajaib (0821-7222-6661) untuk bantuan investasi dan crypto. Layanan pelanggan 24/7 via WhatsApp dan email." />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CustomerService",
+        "name": "Pusat Bantuan Ajaib",
+        "description": "Layanan dukungan pelanggan untuk Ajaib Sekuritas dan Ajaib Crypto",
+        "url": "https://ajaib.co.id/help",
+        "telephone": "+62-821-7222-6661",
+        "email": "support@ajaib.co.id",
+        "areaServed": "ID",
+        "availableLanguage": "Indonesian",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+62-821-7222-6661",
+          "contactType": "customer service",
+          "areaServed": "ID",
+          "availableLanguage": "Indonesian",
+          "contactOption": "WhatsApp"
+        }],
+        "sameAs": [
+          "https://www.ajaib.co.id",
+          "https://crypto.ajaib.co.id"
+        ]
+      }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "Bagaimana cara menghubungi Customer Service Ajaib?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anda dapat menghubungi CS Ajaib melalui WhatsApp resmi di nomor 0821-7222-6661 atau email support@ajaib.co.id. Layanan tersedia 24/7."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Apa nomor WhatsApp resmi Ajaib?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nomor WhatsApp resmi Ajaib untuk layanan pelanggan adalah 0821-7222-6661."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Bagaimana cara mendapatkan bantuan untuk Ajaib Crypto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Untuk bantuan terkait Ajaib Crypto, Anda dapat menghubungi tim support melalui WhatsApp di 0821-7222-6661 atau email support@ajaib.co.id"
+          }
+        }]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-39f3a4a8.js"></script>
+    <link rel="stylesheet" href="/assets/index-42bf4326.css">
+    <script type="module">
+						window.onerror = (message, source, lineno, colno, errorObj) => {
+							window.parent.postMessage({
+								type: 'horizons-runtime-error',
+								message,
+								source,
+								lineno,
+								colno,
+								error: errorObj && errorObj.stack
+							}, '*');
+						};
+          </script>
+    <script type="module">
+						const observer = new MutationObserver((mutations) => {
+							for (const mutation of mutations) {
+								for (const addedNode of mutation.addedNodes) {
+									if (
+										addedNode.nodeType === Node.ELEMENT_NODE &&
+										(
+											addedNode.tagName?.toLowerCase() === 'vite-error-overlay' ||
+											addedNode.classList?.contains('backdrop')
+										)
+									) {
+										handleViteOverlay(addedNode);
+									}
+								}
+							}
+						});
+
+						observer.observe(document.documentElement, {
+							childList: true,
+							subtree: true
+						});
+
+						function handleViteOverlay(node) {
+							if (!node.shadowRoot) {
+								return;
+							}
+
+							const backdrop = node.shadowRoot.querySelector('.backdrop');
+
+							if (backdrop) {
+								const overlayHtml = backdrop.outerHTML;
+								const parser = new DOMParser();
+								const doc = parser.parseFromString(overlayHtml, 'text/html');
+								const messageBodyElement = doc.querySelector('.message-body');
+								const fileElement = doc.querySelector('.file');
+								const messageText = messageBodyElement ? messageBodyElement.textContent.trim() : '';
+								const fileText = fileElement ? fileElement.textContent.trim() : '';
+								const error = messageText + (fileText ? ' File:' + fileText : '');
+
+								window.parent.postMessage({
+									type: 'horizons-vite-error',
+									error,
+								}, '*');
+							}
+						}
+          </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
