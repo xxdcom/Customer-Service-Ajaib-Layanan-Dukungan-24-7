@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://customer-service-ajaib-layanan-dukungan-24-7.vercel.app/sitemap.xml
